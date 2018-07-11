@@ -1,0 +1,9 @@
+package com.astrolabe.logbook.model.request;
+
+public class UserProfileRequestVO {
+
+	private String userId;
+	
+	private String pwd;
+	
+}

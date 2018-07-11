@@ -1,0 +1,36 @@
+package com.astrolabe.logbook.common.layout;
+
+import com.astrolabe.logbook.common.enums.Status;
+import com.astrolabe.logbook.common.exception.ServiceException;
+
+public class ServiceResponseBuilder implements IServiceResponseBuilder {
+
+	@Override
+	public <T>ServiceResponse<T> build(T vo) {
+		ServiceResponse<T> response = new ServiceResponse<T>();
+		response.setResponse(vo);
+		response.setStatus(Status.SUCCESS);
+		return response;
+	}
+
+	@Override
+	public <T>ServiceResponse<T> buildError(ServiceException exception) {
+		ServiceResponse<T> response = new ServiceResponse<T>();
+		ErrorVO error = new ErrorVO();
+		error.setCode(exception.getCode());
+		response.setError(error);
+		response.setStatus(Status.ERROR);
+		return response;
+	}
+
+	@Override
+	public <T>ServiceResponse<T> buildFatal() {
+		ServiceResponse<T> response = new ServiceResponse<T>();
+		ErrorVO error = new ErrorVO();
+		error.setCode("");
+		response.setError(error);
+		response.setStatus(Status.FATAL);
+		return response;
+	}
+
+}

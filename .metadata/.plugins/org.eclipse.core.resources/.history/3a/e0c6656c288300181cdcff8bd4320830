@@ -1,0 +1,10 @@
+package com.astrolabe.logbook.common.layout;
+
+public interface IServiceResponseBuilder {
+
+	public <T><ServiceResponse> build(T response);
+	public <T><ServiceResponse> buildError(ServiceException exception);
+	public <T><ServiceResponse> buildFatal();
+	
+	
+}

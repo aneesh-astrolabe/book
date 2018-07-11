@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.astrolabe.logbook.controller;
+
+/**
+ * @author aneesh
+ *
+ */
+public class ProfileServiceController {
+
+}

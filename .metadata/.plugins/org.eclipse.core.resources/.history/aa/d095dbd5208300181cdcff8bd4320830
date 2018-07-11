@@ -1,0 +1,12 @@
+package com.astrolabe.logbook.services;
+
+/**
+ * @author aneesh
+ *
+ */
+public interface ProfileService {
+
+	//public ServiceResponse<T> getUserProfile() throws ServiceException;
+	
+	public UserProfileVO getUserProfile() throws ServiceException;
+}

@@ -1,0 +1,11 @@
+package com.astrolabe.logbook.model;
+
+public class UserProfile {
+
+	private String userId;
+	
+	private String userName;
+	
+	
+	
+}

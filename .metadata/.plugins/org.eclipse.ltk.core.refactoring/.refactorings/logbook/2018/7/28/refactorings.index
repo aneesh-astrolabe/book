@@ -1,0 +1,10 @@
+1531073141023	Rename resource 'logbook-context.xml'
+1531103930171	Move compilation unit
+1531103960339	Rename type 'UserProfileVO'
+1531106718443	Delete element
+1531107633626	Encapsulate field 'status'
+1531107723428	Encapsulate field 'error'
+1531107905886	Move compilation unit
+1531108389806	Delete element
+1531108795547	Encapsulate field 'payload'
+1531146708262	Delete element

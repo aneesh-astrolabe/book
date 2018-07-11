@@ -1,0 +1,9 @@
+package com.astrolabe.logbook.services;
+
+/**
+ * @author aneesh
+ *
+ */
+public interface ProfileService {
+
+}

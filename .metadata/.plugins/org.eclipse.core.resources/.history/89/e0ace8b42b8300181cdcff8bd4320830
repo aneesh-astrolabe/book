@@ -1,0 +1,25 @@
+package com.astrolabe.logbook.common.layout;
+
+import com.astrolabe.logbook.common.exception.ServiceException;
+
+public class ServiceResponseBuilder implements IServiceResponseBuilder {
+
+	@Override
+	public <T> ServiceResponse<T> build(T response) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <T> ServiceResponse<T> buildError(ServiceException exception) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <T> ServiceResponse<T> buildFatal() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

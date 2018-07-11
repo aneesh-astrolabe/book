@@ -1,0 +1,11 @@
+package com.astrolabe.logbook.common.constant;
+
+public class ServiceException extends Throwable{
+
+	private static final long serialVersionUID = -6525828466204796094L;
+	
+	private String code;
+	
+	private String msg;
+
+}

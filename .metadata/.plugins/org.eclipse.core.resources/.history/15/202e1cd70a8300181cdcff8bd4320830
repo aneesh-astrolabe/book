@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package com.astrolabe.logbook.services.impl;
+
+import com.astrolabe.logbook.services.ProfileService;
+
+/**
+ * @author aneesh
+ *
+ */
+public class ProfileServiceImpl implements ProfileService {
+
+}

@@ -1,0 +1,12 @@
+package com.astrolabe.logbook.common.layout;
+
+public class ServiceResponse<T> {
+
+	private T response;
+	
+	public T getResponse() {
+		return response;
+	}
+	
+	
+}

@@ -1,0 +1,38 @@
+package com.astrolabe.logbook.services.impl;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.astrolabe.logbook.common.exception.ServiceException;
+import com.astrolabe.logbook.common.layout.ServiceResponse;
+import com.astrolabe.logbook.common.layout.ServiceResponseBuilder;
+import com.astrolabe.logbook.model.request.UserProfileRequestVO;
+import com.astrolabe.logbook.model.response.UserProfileResponseVO;
+import com.astrolabe.logbook.services.ProfileService;
+
+/**
+ * @author aneesh
+ *
+ */
+@Component
+public class ProfileServiceImpl implements ProfileService {
+
+	private static final Logger logger = LoggerFactory.getLogger(ProfileServiceImpl.class);
+
+	@Autowired
+	ServiceResponseBuilder responseBuilder;
+	
+	@Override
+	public <T>ServiceResponse<T> getUserProfile(UserProfileRequestVO userProfileRequest) throws ServiceException {
+		logger.info("Executing profile service request "+userProfileRequest);
+		UserProfileResponseVO userProfile = new UserProfileResponseVO();
+		userProfile.setUserId("1234");
+		userProfile.setUserName("Aneesh");
+		userProfile.setContactNumber("849-339-8293");
+		userProfile.setEmail("aneesh.astrolabe@gmail.com");
+		return (ServiceResponse<T>) responseBuilder.build(userProfile);
+	}
+
+}

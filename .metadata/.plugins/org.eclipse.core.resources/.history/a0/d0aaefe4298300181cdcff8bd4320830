@@ -1,0 +1,17 @@
+package com.astrolabe.logbook.common.layout;
+
+public class ServiceResponse<T> {
+
+	private T response;
+	
+	private Status status;
+	
+	public T getResponse() {
+		return response;
+	}
+	
+	public void setResponse(T response) {
+		this.response = response;
+	}
+	
+}

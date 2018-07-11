@@ -1,0 +1,10 @@
+package com.astrolabe.logbook.common.layout;
+
+public class ErrorVO {
+
+	private String code;
+	
+	private String msg;
+	
+	
+}

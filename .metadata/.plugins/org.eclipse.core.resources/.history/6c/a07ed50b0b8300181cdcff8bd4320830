@@ -1,0 +1,5 @@
+package com.astrolabe.logbook.model;
+
+public class UserProfile {
+
+}

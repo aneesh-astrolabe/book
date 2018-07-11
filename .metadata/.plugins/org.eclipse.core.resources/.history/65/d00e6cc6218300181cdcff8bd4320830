@@ -1,0 +1,24 @@
+package com.astrolabe.logbook.services.impl;
+
+import com.astrolabe.logbook.common.constant.ServiceException;
+import com.astrolabe.logbook.model.request.UserProfileRequestVO;
+import com.astrolabe.logbook.model.response.UserProfileResponseVO;
+import com.astrolabe.logbook.services.ProfileService;
+
+/**
+ * @author aneesh
+ *
+ */
+public class ProfileServiceImpl implements ProfileService {
+
+	@Override
+	public UserProfileResponseVO getUserProfile(UserProfileRequestVO userProfileRequest) throws ServiceException {
+		UserProfileResponseVO userProfile = new UserProfileResponseVO();
+		userProfile.setUserId("1234");
+		userProfile.setUserName("Aneesh");
+		userProfile.setContactNumber("849-339-8293");
+		userProfile.setEmail("aneesh.astrolabe@gmail.com");
+		return userProfile;
+	}
+
+}

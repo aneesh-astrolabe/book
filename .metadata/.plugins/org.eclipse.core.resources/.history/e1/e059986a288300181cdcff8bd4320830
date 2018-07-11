@@ -1,0 +1,8 @@
+package com.astrolabe.logbook.common.layout;
+
+public interface IServiceResponseBuilder {
+
+	public <T><ServiceResponse> build(T response);
+	
+	
+}

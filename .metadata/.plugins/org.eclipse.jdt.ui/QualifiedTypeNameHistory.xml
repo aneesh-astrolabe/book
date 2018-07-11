@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="com.astrolabe.logbook.common.enums.Status"/>
+<fullyQualifiedTypeName name="com.astrolabe.logbook.common.layout.ServiceResponse"/>
+<fullyQualifiedTypeName name="com.astrolabe.logbook.common.constant.URLConstants"/>
+<fullyQualifiedTypeName name="com.astrolabe.logbook.common.constant.ErrorCodes"/>
+</qualifiedTypeNameHistroy>

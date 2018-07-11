@@ -1,0 +1,5 @@
+package com.astrolabe.logbook.model.request;
+
+public class UserProfileRequestVO {
+
+}

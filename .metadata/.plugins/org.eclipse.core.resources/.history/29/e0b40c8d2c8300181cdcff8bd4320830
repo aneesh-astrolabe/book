@@ -1,0 +1,18 @@
+package com.astrolabe.logbook.common.layout;
+
+import com.astrolabe.logbook.common.enums.Status;
+
+public class ServiceRequest<T> {
+
+	private T payload;
+
+	public T getPayload() {
+		return payload;
+	}
+
+	public void setPayload(T payload) {
+		this.payload = payload;
+	}
+	
+
+}

@@ -1,0 +1,16 @@
+package com.astrolabe.logbook.services;
+
+import com.astrolabe.logbook.common.constant.ServiceException;
+import com.astrolabe.logbook.model.request.UserProfileRequestVO;
+import com.astrolabe.logbook.model.response.UserProfileResponseVO;
+
+/**
+ * @author aneesh
+ *
+ */
+public interface ProfileService {
+
+	//public ServiceResponse<T> getUserProfile() throws ServiceException;
+	
+	public UserProfileResponseVO getUserProfile(UserProfileRequestVO userProfileRequest) throws ServiceException;
+}
